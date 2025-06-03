@@ -9,7 +9,8 @@ app.use(express.json());
 
 // CORS
 const corsOptions = {
-  origin: process.env.APPLICATION_URL,
+  // origin: process.env.APPLICATION_URL,
+  origin:"*",
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
 };
 app.use(cors(corsOptions));
